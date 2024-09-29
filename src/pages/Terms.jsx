@@ -2,14 +2,14 @@ import React from 'react'
 
 const Terms = () => {
     return (
-        <section className='px-5 lg:px-24 py-10 lg:py-20 h-max bg-[#f9f9f9] text-green-900'>
+        <section className='px-5 lg:px-24 py-10 lg:py-20 h-max text-green-900'>
             <div className='text-center'>
                 <h2 className='text-3xl lg:text-5xl font-bold mb-5'>Terms of Service</h2>
                 <p className='text-lg lg:text-xl mb-10'>Your Agreement with ONJ Cleaning Services</p>
             </div>
 
             {/* Terms and Conditions Content */}
-            <div className='bg-white rounded-lg p-8 shadow-lg'>
+            <div className=''>
                 <h3 className='font-bold text-2xl mb-4'>1. Service Agreement</h3>
                 <p className='text-gray-700 mb-6'>
                     ONJ Cleaning Services agrees to provide the cleaning services as outlined at the time of

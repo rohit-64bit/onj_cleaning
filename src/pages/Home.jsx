@@ -78,7 +78,7 @@ const Home = () => {
                             Welcome to <span className='text-green-900'>ONJ </span>Cleaning Services
                         </p>
 
-                        <p className='font-normal text-sm'>Eco Friendly Cleaning Products | 100% Satisfaction Guaranteed | Affordable Pricing</p>
+                        <p className='font-normal text-sm'>Eco-friendly Cleaning Products | 100% Satisfaction Guaranteed | Affordable Pricing</p>
                         <Link to='/services' className='font-medium bg-green-900 text-white w-max px-3 lg:px-10 py-3 rounded-md'>Book a Cleaning Today</Link>
 
                     </div>
@@ -129,7 +129,7 @@ const Home = () => {
                             <h4 className='text-3xl font-bold'>Residential Cleaning Service</h4>
                         </div>
                         <div className=''>
-                            When you work with ONJ cleaning you can cross a major choir off your list,cleaning your home.
+                           By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
                         </div>
                         <div className='list-disc'>
                             {listItem.map((item, index) => {
@@ -145,7 +145,7 @@ const Home = () => {
                             <h4 className='text-3xl font-bold'>Commercial Cleaning Service</h4>
                         </div>
                         <div>
-                            When you work with ONJ cleaning you can cross a major choir off your list,cleaning your home.
+                           By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
                         </div>
                         <div className='list-disc'>
                             {listItem.map((item, index) => {

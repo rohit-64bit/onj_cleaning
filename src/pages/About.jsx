@@ -2,6 +2,30 @@ import React from 'react';
 import BgImg from '../assets/about.webp'; // Assuming you have a background image for the hero section
 
 const About = () => {
+
+    const faqs = [
+        {
+            question: "What areas do you serve?",
+            answer: "We proudly serve Belle Glade and surrounding areas."
+        },
+        {
+            question: "Do you provide cleaning supplies?",
+            answer: "Yes, we bring all necessary eco-friendly cleaning supplies. However, if you have any specific product requests, we are happy to accommodate."
+        },
+        {
+            question: "Are your cleaners insured?",
+            answer: "Yes, all of our team members are fully insured for your peace of mind."
+        },
+        {
+            question: "Can I schedule recurring cleaning services?",
+            answer: "Absolutely! We offer flexible scheduling for daily, weekly, or monthly services based on your needs."
+        },
+        {
+            question: "What is your cancellation policy?",
+            answer: "We require 24-hour notice for cancellations or rescheduling."
+        }
+    ];
+
     return (
         <>
             {/* Hero Section */}
@@ -100,6 +124,24 @@ const About = () => {
                     Call Us Now: (XXX) XXX-XXXX
                 </button>
             </section>
+
+            <section className="bg-gray-100 py-10">
+                <div className="max-w-4xl mx-auto px-4">
+                    <h1 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h1>
+                    <div className="space-y-6">
+                        {faqs.map((faq, index) => (
+                            <div key={index} className="p-6 bg-white rounded-lg shadow-md">
+                                <h2 className="text-xl font-semibold">{faq.question}</h2>
+                                <p className="mt-2 text-gray-700">{faq.answer}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="mt-10 text-center">
+                        <p className="text-lg">Don’t see your question? Contact us at <span className="font-semibold">(XXX) XXX-XXXX</span> for more information or to get started today.</p>
+                    </div>
+                </div>
+            </section>
+
         </>
     );
 }

@@ -8,11 +8,15 @@ import ContactUs from "./pages/ContactUs"
 import Services from "./pages/Services"
 import Privacy from "./pages/Privacy"
 import Terms from "./pages/Terms"
+import CostCalculator from "./pages/CostCalculator"
+import ScrollReset from './components/ScrollReset';
 
 function App() {
 
   return (
     <>
+
+      <ScrollReset />
 
       <PageTop />
 
@@ -26,7 +30,8 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/terms" element={<Terms />} />
-
+        <Route path="/cost-calculator" element={<CostCalculator />} />
+        <Route path="*" element={<Home />} />
 
       </Routes>
 

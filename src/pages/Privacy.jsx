@@ -2,7 +2,7 @@ import React from 'react'
 
 const Privacy = () => {
     return (
-        <section className='px-5 lg:px-24 py-10 lg:py-20 h-max bg-[#f9f9f9] text-green-900'>
+        <section className='px-5 lg:px-24 py-10 lg:py-20 h-max text-green-900'>
 
             <div className='text-center'>
                 <h2 className='text-3xl lg:text-5xl font-bold mb-5'>Privacy Policy</h2>
@@ -10,7 +10,7 @@ const Privacy = () => {
             </div>
 
             {/* Privacy Policy Content */}
-            <div className='bg-white rounded-lg p-8 shadow-lg'>
+            <div className=''>
                 <h3 className='font-bold text-2xl mb-4'>1. Information We Collect</h3>
                 <p className='text-gray-700 mb-6'>
                     ONJ Cleaning Services ("we," "our," "us") values the privacy of our clients. This Privacy Policy explains how we collect, use, and protect your information.

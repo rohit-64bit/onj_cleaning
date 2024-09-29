@@ -36,23 +36,20 @@ const Header = () => {
                 <nav className='flex gap-5 text-xl text-white'>
                     {navLinks.map((data, index) => {
                         return (
-                            <NavLink className={({ isActive }) => isActive ? 'font-medium' : ''} to={data.link} key={index}>
+                            <NavLink className={({ isActive }) => isActive ? 'font-medium duration-300 ' : 'font-medium duration-300 opacity-70 hover:opacity-100'} to={data.link} key={index}>
                                 {data.name}
                             </NavLink>
                         )
                     })}
                 </nav>
 
-                <Link className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
-                    Online Appointment
+                <Link to='/cost-calculator' className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                    Calculate Cost
                 </Link>
 
             </header>
             <header className='bg-green-800 flex justify-between items-center lg:mx-24 px-5 py-5 lg:hidden top-0 sticky z-40'>
                 <RiMenu2Line onClick={handleOpen} size={30} className='text-white' />
-                <Link className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
-                    Book Appointment
-                </Link>
             </header>
 
             <Modal
@@ -62,6 +59,7 @@ const Header = () => {
             >
                 <div className='bg-white p-10 rounded-xl'>
                     <nav className='flex flex-col gap-5 text-xl text-[#004AAD]'>
+
                         {navLinks.map((data, index) => {
                             return (
                                 <NavLink onClick={handleClose} className={({ isActive }) => isActive ? 'font-medium' : ''} to={data.link} key={index}>
@@ -69,6 +67,10 @@ const Header = () => {
                                 </NavLink>
                             )
                         })}
+
+                        <Link to='/cost-calculator' className='text-white bg-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                            Calculate Cost
+                        </Link>
                     </nav>
                 </div>
             </Modal>

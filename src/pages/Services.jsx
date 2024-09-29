@@ -10,6 +10,7 @@ import { BsBuildingsFill } from "react-icons/bs";
 
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
+import { Link } from 'react-router-dom'
 
 const stripePromise = loadStripe('pk_test_51PZIArG5MT11KApvXJgAFIKzv4iLzN2ca8IGOPmcwUQ8je8kiuUmqWEJKlWYP3D8CYUHfPKvr1uNswIav8LyAATs00f6EMku9m');
 
@@ -44,10 +45,13 @@ const ServiceCard = ({ data }) => {
                 <p className='text-sm w-[100%] text-center'>{data.description}</p>
             </div>
             <div className="flex flex-col gap-2 mt-2">
-                <h4 className='font-semibold text-center text-xl'>Price- {data.price} USD</h4>
-                <button onClick={handleCheckout} className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out'>
+                {/* <h4 className='font-semibold text-center text-xl'>Price- {data.price} USD</h4> */}
+                {/* <button onClick={handleCheckout} className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out'>
                     Book Now
-                </button>
+                </button> */}
+                <Link to='/cost-calculator' className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center'>
+                    Calculate Cost
+                </Link>
             </div>
         </div>
     )
@@ -108,7 +112,7 @@ const Services = () => {
                         Professional Cleaning Services Tailored to Your Needs
                     </p>
                     <p className='text-xl font-light w-[80%] py-5 text-center text-black-700'>
-                        At Cleanatrix, LLC, we offer a wide range of cleaning services to ensure your home, office, or Airbnb property is pristine. Our services include:
+                        At ONJ Cleaning, we offer a wide range of cleaning services to ensure your home, office, or Airbnb property is pristine. Our services include:
                     </p>
                 </div>
 
@@ -141,7 +145,7 @@ const Services = () => {
                             <h4 className='text-3xl font-bold'>Residential Cleaning Service</h4>
                         </div>
                         <div className=''>
-                            When you work with ONJ cleaning you can cross a major choir off your list,cleaning your home.
+                            By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
                         </div>
                         <div className='list-disc'>
                             {listItem.map((item, index) => {
@@ -157,7 +161,7 @@ const Services = () => {
                             <h4 className='text-3xl font-bold'>Commercial Cleaning Service</h4>
                         </div>
                         <div>
-                            When you work with ONJ cleaning you can cross a major choir off your list,cleaning your home.
+                            By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
                         </div>
                         <div className='list-disc'>
                             {listItem.map((item, index) => {

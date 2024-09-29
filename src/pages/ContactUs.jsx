@@ -17,7 +17,7 @@ const ContactUs = () => {
         },
         {
             title: 'Email Address',
-            details: 'info@cleanatrix.com',
+            details: 'info@onjcleaning.com',
             icon: CiMail
         },
         {

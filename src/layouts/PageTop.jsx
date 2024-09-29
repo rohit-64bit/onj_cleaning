@@ -2,7 +2,7 @@ import React from 'react'
 import { FcClock } from "react-icons/fc";
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
-import Logo from '../assets/logo.jpg'
+import Logo from '../assets/logo.png'
 import SlideInFromBottom from '../components/SlideInFromBottom';
 
 const PageTop = () => {
@@ -15,7 +15,7 @@ const PageTop = () => {
         },
         {
             title: 'Email Address',
-            details: 'info@cleanatrix.com',
+            details: 'info@onjcleaning.com',
             icon: CiMail
         },
         {
@@ -28,7 +28,7 @@ const PageTop = () => {
     return (
         <header className='flex flex-col xl:flex-row justify-between items-center py-5 px-5 xl:px-28'>
 
-            <img src='' alt="" className='aspect-square w-20 h-20 rounded-full bg-green-900' />
+            <img src={Logo} alt="" className='aspect-square w-32 rounded-full' />
 
             <div className='flex flex-col md:flex-row gap-5 xl:gap-10 mt-5'>
 
