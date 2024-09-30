@@ -1,5 +1,6 @@
 import React from 'react';
-import BgImg from '../assets/about.webp'; // Assuming you have a background image for the hero section
+import BgImg from '../assets/about.webp';
+import TeamImg from '../assets/team.jpg';
 
 const About = () => {
 
@@ -140,6 +141,25 @@ const About = () => {
                         <p className="text-lg">Don’t see your question? Contact us at <span className="font-semibold">(XXX) XXX-XXXX</span> for more information or to get started today.</p>
                     </div>
                 </div>
+            </section>
+
+            <section className='px-5 py-10 bg-green-900 text-white text-center flex flex-col items-center'>
+
+                <div className='text-3xl lg:text-5xl font-bold mb-5'>The Team</div>
+
+                <p className='text-lg lg:text-xl mb-5'>
+                    Meet the dedicated professionals behind ONJ Cleaning Services.
+                </p>
+
+                <div className='bg-white rounded-xl p-10 flex gap-5 mt-5 text-black text-left w-[30%]'>
+                    <img src={TeamImg} alt="" className='w-36 rounded-full' />
+                    <div className='flex flex-col gap-1'>
+                        <h4 className='font-bold text-2xl'>John Doe</h4>
+                        <p className='text-sm'>Founder & CEO</p>
+                        <p className='text-base mt-1'>John is a passionate entrepreneur with a vision to provide top-notch cleaning services to the community.</p>
+                    </div>
+                </div>
+
             </section>
 
         </>
