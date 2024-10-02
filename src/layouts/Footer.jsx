@@ -63,7 +63,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className='xl:mx-24 px-20 py-24 bg-[#ffeecf7a] flex'>
+            <footer className='px-20 py-24 bg-[#ffeecf7a] flex'>
 
                 <div className='flex flex-col md:flex-row gap-10 text-black'>
                     {footerData.map((data, index) => {

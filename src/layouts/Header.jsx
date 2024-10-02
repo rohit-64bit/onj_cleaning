@@ -31,7 +31,7 @@ const Header = () => {
 
     return (
         <>
-            <header className='bg-green-900 lg:flex justify-between items-center xl:mx-24 px-20 py-10 hidden top-0 sticky z-40'>
+            <header className='bg-green-900 lg:flex justify-between items-center px-20 py-10 hidden top-0 sticky z-40'>
 
                 <nav className='flex gap-5 text-xl text-white'>
                     {navLinks.map((data, index) => {

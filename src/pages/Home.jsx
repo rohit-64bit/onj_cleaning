@@ -62,7 +62,7 @@ const Home = () => {
     return (
         <>
 
-            <section className='xl:mx-24 px-5 lg:px-20 bg-[#ffeecf7a] flex flex-col md:flex-row h-screen md:h-[70vh] justify-center items-center overflow-hidden'>
+            <section className='px-5 lg:px-20 bg-[#ffeecf7a] flex flex-col md:flex-row h-screen md:h-[70vh] justify-center items-center overflow-hidden'>
 
                 <div className='flex flex-col gap-5 justify-center'>
 
