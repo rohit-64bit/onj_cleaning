@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import { RiMenu2Line } from "react-icons/ri";
 import { Modal } from '@mui/material';
+import { NavHashLink } from 'react-router-hash-link';
 
 const Header = () => {
 
@@ -22,6 +23,10 @@ const Header = () => {
         {
             name: 'Contact Us',
             link: '/contact'
+        },
+        {
+            name: 'Blog',
+            link: '/blog'
         }
     ]
 
@@ -41,10 +46,13 @@ const Header = () => {
                             </NavLink>
                         )
                     })}
+                    <NavHashLink to='/about#faqs' className={({ isActive }) => isActive ? 'font-medium duration-300 ' : 'font-medium duration-300 opacity-70 hover:opacity-100'}>
+                        FAQs
+                    </NavHashLink>
                 </nav>
 
-                <Link to='/cost-calculator' className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
-                    Calculate Cost
+                <Link to='/contact' className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                    Book Now
                 </Link>
 
             </header>
@@ -67,9 +75,12 @@ const Header = () => {
                                 </NavLink>
                             )
                         })}
+                        <NavHashLink to='/about#faqs' className={({ isActive }) => isActive ? 'font-medium' : ''}>
+                            FAQs
+                        </NavHashLink>
 
-                        <Link to='/cost-calculator' className='text-white bg-green-900 font-medium text-xl py-2 px-6 rounded-md'>
-                            Calculate Cost
+                        <Link to='/contact' className='text-white bg-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                            Book Now
                         </Link>
                     </nav>
                 </div>

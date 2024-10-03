@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { NavHashLink } from 'react-router-hash-link'
 
 const Footer = () => {
 
@@ -23,6 +24,14 @@ const Footer = () => {
                     name: 'Contact Us',
                     link: '/contact'
                 },
+                {
+                    name: 'Blogs',
+                    link: '/blog'
+                },
+                {
+                    name: 'FAQs',
+                    link: '/about#faqs'
+                }
             ]
         },
         {
@@ -73,9 +82,14 @@ const Footer = () => {
                                 <nav className='flex flex-col gap-2'>
                                     {data.links.map((link, index) => {
                                         return (
-                                            <Link to={link.link} key={index} className=' hover:underline opacity-80 hover:opacity-100 duration-300 text-lg'>
-                                                {link.name}
-                                            </Link>
+                                            link.name === 'FAQs' ?
+                                                <NavHashLink to={link.link} key={index} className=' hover:underline opacity-80 hover:opacity-100 duration-300 text-lg'>
+                                                    {link.name}
+                                                </NavHashLink>
+                                                :
+                                                <Link to={link.link} key={index} className=' hover:underline opacity-80 hover:opacity-100 duration-300 text-lg'>
+                                                    {link.name}
+                                                </Link>
                                         )
                                     })}
                                 </nav>

@@ -63,7 +63,7 @@ const Privacy = () => {
                 <p className='text-gray-700'>
                     If you have any questions or concerns regarding our Privacy Policy, please contact us at:
                     <br />
-                    <strong>Phone:</strong> (XXX) XXX-XXXX
+                    <strong>Phone:</strong> (561) 451 7984
                     <br />
                     <strong>Email:</strong> info@onjcleaning.com
                 </p>
@@ -72,7 +72,7 @@ const Privacy = () => {
             {/* Call to Action Section */}
             <div className='text-center mt-10'>
                 <p className='text-lg lg:text-xl font-bold'>
-                    For any questions or concerns about your privacy, feel free to reach out at (XXX) XXX-XXXX.
+                    For any questions or concerns about your privacy, feel free to reach out at (561) 451 7984.
                 </p>
             </div>
         </section>

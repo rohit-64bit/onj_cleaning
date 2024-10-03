@@ -29,7 +29,7 @@ const ContactUs = () => {
 
     return (
         <>
-            <section className='flex h-[30vh] md:h-[50vh] relative justify-center items-center lg:mx-24'>
+            <section className='flex h-[30vh] md:h-[50vh] relative justify-center items-center'>
                 <img className='h-full w-full object-cover brightness-50' src={BgImg} alt="About ONJ Cleaning Services" />
                 <div className='flex flex-col w-full text-white absolute items-center font-bold'>
                     <div className='text-xl lg:text-4xl'>Get In Touch With</div>
@@ -57,7 +57,7 @@ const ContactUs = () => {
 
                         <div>
                             <h4 className='font-bold text-xl'>Phone:</h4>
-                            <p>(XXX) XXX-XXXX</p>
+                            <p>(561) 451 7984</p>
                         </div>
 
                         <div>
@@ -108,11 +108,14 @@ const ContactUs = () => {
                             </button>
                         </form>
                     </div>
+
                 </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.8410573752394!2d-80.6725681248625!3d26.68556536981588!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d951093d8d023f%3A0xebde05515b970f61!2sONJ%20Cleaning%20Services%20LLC!5e0!3m2!1sen!2sin!4v1727909290380!5m2!1sen!2sin" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" className='h-[50vh] w-full rounded-lg mt-10 shadow-lg'></iframe>
 
                 {/* Call to Action */}
                 <div className='text-center mt-10'>
-                    <p className='text-lg lg:text-xl font-bold'>Reach out today! Call us at (XXX) XXX-XXXX or fill out the form above, and we’ll get back to you promptly.</p>
+                    <p className='text-lg lg:text-xl font-bold'>Reach out today! Call us at (561) 451 7984 or fill out the form above, and we’ll get back to you promptly.</p>
                 </div>
             </section>
 

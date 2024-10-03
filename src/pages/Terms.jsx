@@ -43,7 +43,7 @@ const Terms = () => {
             {/* Call to Action Section */}
             <div className='text-center mt-10'>
                 <p className='text-lg lg:text-xl font-bold'>
-                    For further details or service inquiries, call us at (XXX) XXX-XXXX.
+                    For further details or service inquiries, call us at (561) 451 7984.
                 </p>
             </div>
         </section>

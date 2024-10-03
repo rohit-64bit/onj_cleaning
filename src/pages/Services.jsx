@@ -49,8 +49,8 @@ const ServiceCard = ({ data }) => {
                 {/* <button onClick={handleCheckout} className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out'>
                     Book Now
                 </button> */}
-                <Link to='/cost-calculator' className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center'>
-                    Calculate Cost
+                <Link to='/contact' className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center'>
+                    Book Now
                 </Link>
             </div>
         </div>
@@ -97,7 +97,7 @@ const Services = () => {
 
     return (
         <>
-            <section className='flex h-[30vh] md:h-[50vh] relative justify-center items-center lg:mx-24'>
+            <section className='flex h-[30vh] md:h-[50vh] relative justify-center items-center'>
                 <img className='h-full w-full object-cover brightness-50' src={Servimg} alt="About ONJ Cleaning Services" />
                 <div className='flex flex-col w-full text-white absolute items-center font-bold'>
                     <div className='text-xl lg:text-4xl'>Our Services</div>
@@ -127,52 +127,6 @@ const Services = () => {
                     }
                 </div>
 
-            </section>
-
-            <section className='xl:mx-24 flex flex-col mb-20'>
-
-                <div className='bg-hero h-[30vh] md:h-[60vh] md:rounded-b-2xl'>
-                    <div className='h-full bg-black opacity-50 rounded-b-2xl'>
-                    </div>
-                </div>
-
-                <div className='flex flex-col md:flex-row justify-center md:w-[80%] mx-auto md:-mt-72 z-10'>
-
-                    <div className='bg-[#323232] text-white text-l p-10 md:rounded-l-xl flex flex-col gap-6'>
-
-                        <div className='flex gap-5 items-center'>
-                            <FaHome size={80} />
-                            <h4 className='text-3xl font-bold'>Residential Cleaning Service</h4>
-                        </div>
-                        <div className=''>
-                            By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
-                        </div>
-                        <div className='list-disc'>
-                            {listItem.map((item, index) => {
-                                return (
-                                    <li key={index}>{item}</li>
-                                )
-                            })}
-                        </div>
-                    </div>
-                    <div className='bg-[#00603E] text-white text-l p-10 md:rounded-r-xl flex flex-col gap-6'>
-                        <div className='flex gap-5 items-center'>
-                            <BsBuildingsFill size={80} />
-                            <h4 className='text-3xl font-bold'>Commercial Cleaning Service</h4>
-                        </div>
-                        <div>
-                            By choosing ONJ Cleaning, you can eliminate the hassle of cleaning your home from your list of chores.
-                        </div>
-                        <div className='list-disc'>
-                            {listItem.map((item, index) => {
-                                return (
-                                    <li key={index}>{item}</li>
-                                )
-                            })}
-                        </div>
-                    </div>
-
-                </div>
             </section>
 
         </>

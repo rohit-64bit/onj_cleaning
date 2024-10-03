@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "title": "Airbnb Cleaning: Ensuring a 5-Star Guest Experience",
+        "intro": "At onjcleaningservices, we understand that cleanliness is crucial for Airbnb hosts to maintain high ratings and guest satisfaction. Our team provides comprehensive cleaning services that prepare your space for the next guest, ensuring quick turnovers and maintaining guest-ready conditions.",
+        "img": "https://img.freepik.com/free-photo/chambermaid-preparing-hotel-room_23-2148095225.jpg",
+        "points": [
+            {
+                "title": "Detailed Cleaning for High-Traffic Areas",
+                "content": "From the kitchen to the bathroom, our team focuses on cleaning areas that see the most use. We ensure countertops, sinks, and floors are spotless, making a lasting impression on your guests."
+            },
+            {
+                "title": "Replenishing Essentials",
+                "content": "We don’t just clean; we make sure your space is fully stocked with essentials such as toilet paper, soap, and clean linens, creating a hassle-free experience for you and your guests."
+            },
+            {
+                "title": "Sanitization for Guest Safety",
+                "content": "Our Airbnb cleaning service includes thorough disinfection of high-touch surfaces like door handles, remotes, and light switches, ensuring your space meets post-pandemic safety expectations."
+            }
+        ],
+        "conclusion": "With detailed cleaning, restocking, and thorough sanitization, onjcleaningservices helps you maintain a spotless Airbnb property that delights guests and secures top-tier reviews."
+    },
+    {
+        "id": 2,
+        "title": "Residential Cleaning Services: Keeping Your Home Fresh and Inviting",
+        "intro": "A clean home is a happy home. At onjcleaningservices, we offer customizable residential cleaning services tailored to your specific needs, whether you're looking for a one-time deep clean or ongoing maintenance.",
+        "img": "https://images.unsplash.com/photo-1686178827149-6d55c72d81df?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "points": [
+            {
+                "title": "Comprehensive Cleaning Solutions",
+                "content": "We handle all aspects of home cleaning, from dusting and vacuuming to mopping floors and cleaning bathrooms. Our service ensures every corner of your home is clean and welcoming."
+            },
+            {
+                "title": "Flexible Scheduling",
+                "content": "Whether you need a one-time deep clean or regular weekly visits, our team can create a cleaning schedule that fits your lifestyle and needs."
+            },
+            {
+                "title": "Eco-Friendly Products",
+                "content": "We use environmentally friendly cleaning products that are safe for your family, pets, and the environment, without compromising on the quality of our cleaning."
+            }
+        ],
+        "conclusion": "With flexible plans and eco-friendly products, onjcleaningservices provides exceptional residential cleaning that keeps your home looking its best."
+    },
+    {
+        "id": 3,
+        "title": "Commercial Cleaning: Keeping Your Business Spotless and Professional",
+        "intro": "First impressions matter. onjcleaningservices provides expert commercial cleaning services that ensure your business space remains clean, hygienic, and welcoming to both employees and clients.",
+        "img": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "points": [
+            {
+                "title": "Tailored Cleaning for Your Business",
+                "content": "Our commercial cleaning services are customized based on the specific needs of your workspace, ensuring that high-traffic areas, lobbies, meeting rooms, and restrooms receive the attention they deserve."
+            },
+            {
+                "title": "Flexible Scheduling for Minimal Disruption",
+                "content": "We offer flexible cleaning schedules, including after-hours service, to minimize disruption to your business operations while keeping your space immaculate."
+            },
+            {
+                "title": "A Healthier Work Environment",
+                "content": "Our commercial cleaning includes sanitization of workstations and communal areas, improving hygiene and reducing the spread of germs, which contributes to a healthier workplace."
+            }
+        ],
+        "conclusion": "With tailored cleaning services and flexible scheduling, onjcleaningservices ensures your business remains clean, professional, and productive."
+    }
+]
