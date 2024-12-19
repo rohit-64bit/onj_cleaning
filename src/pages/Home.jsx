@@ -15,6 +15,7 @@ import { Link } from 'react-router-dom';
 import Testimonial from '../components/Testimonial';
 import Disclaimer from '../components/Disclaimer';
 import { BOOKING_FORM_URL } from '../services/Helpers';
+import { Helmet } from "react-helmet";
 
 const Home = () => {
 
@@ -60,6 +61,19 @@ const Home = () => {
 
     return (
         <>
+        <Helmet>
+        <title>ONJ Cleaning Services | Professional Cleaning Solutions</title>
+        <meta
+          name="description"
+          content="ONJ Cleaning Services offers top-notch residential and commercial cleaning solutions tailored to your needs. Contact us for a spotless environment."
+        />
+        <meta
+          name="keywords"
+          content="ONJ, ONJCleaningServices, cleaning services near me, professional home cleaners, affordable commercial cleaning, deep cleaning experts, reliable cleaning company, cleaning services, residential cleaning, commercial cleaning, professional cleaners, ONJ Cleaning Services"
+        />
+        <meta name="author" content="ONJ Cleaning Services" />
+        <meta name="robots" content="index, follow" />
+        </Helmet>
             {/* Hero Section */}
             <section className='flex flex-col md:flex-row h-max bg-[#e0f7fa]'>
                 <div className='flex-1 flex flex-col justify-center px-10 lg:px-20 py-10'>

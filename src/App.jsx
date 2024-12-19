@@ -12,6 +12,7 @@ import CostCalculator from "./pages/CostCalculator"
 import ScrollReset from './components/ScrollReset';
 import Blog from "./pages/Blog"
 import BlogPost from "./pages/BlogPost"
+import { Helmet } from "react-helmet";
 
 function App() {
 
@@ -26,7 +27,21 @@ function App() {
 
       <Routes>
 
-        <Route path="/" element={<Home />} />
+      <Route
+        path="/"
+        element={
+          <>
+            <Helmet>
+              <title>ONJ Cleaning Services | Home</title>
+              <meta
+                name="description"
+                content="Welcome to ONJ Cleaning Services. Explore our professional cleaning services."
+              />
+            </Helmet>
+            <Home />
+          </>
+        }
+      />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/services" element={<Services />} />
