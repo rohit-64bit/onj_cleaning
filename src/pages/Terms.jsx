@@ -38,6 +38,12 @@ const Terms = () => {
                 <p className='text-gray-700'>
                     These terms are governed by the laws of Florida and the applicable federal laws.
                 </p>
+
+                <h3 className='font-bold text-2xl mb-4'>6. Cancelation Policy</h3>
+                <p className='text-gray-700'>
+                    There is a $100 to $150 Cancelation Fee for bookings already confirmed by the client. Fee is paid upon cancellation. $150 for Deep Cleanings, Move in/Out. $100 for Regular Cleanings.
+                </p>
+
             </div>
 
             {/* Call to Action Section */}

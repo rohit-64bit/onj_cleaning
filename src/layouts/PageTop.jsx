@@ -15,12 +15,12 @@ const PageTop = () => {
         },
         {
             title: 'Email Address',
-            details: 'info@onjcleaning.com',
+            details: 'contact@onjcleaningservices.com',
             icon: CiMail
         },
         {
             title: 'Location',
-            details: '5000 Thayer Center STE C, Oakland, MD',
+            details: '200 west Avenue A Belle Glade Florida 33430',
             icon: CiLocationOn
         }
     ]

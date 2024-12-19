@@ -72,7 +72,7 @@ const Footer = () => {
 
     return (
         <>
-            <footer className='px-20 py-24 bg-[#ffeecf7a] flex'>
+            <footer className='px-20 py-24 bg-[#ffeecf7a] flex flex-col md:flex-row gap-10 justify-between'>
 
                 <div className='flex flex-col md:flex-row gap-10 text-black'>
                     {footerData.map((data, index) => {
@@ -97,6 +97,10 @@ const Footer = () => {
                         )
                     })}
                 </div>
+
+                <p className='text-lg'>
+                    We are listed in b2blistings.org's <a className='text-blue-600 underline underline-offset-2' href="https://www.b2blistings.org/Cleaning-Services/C44-1-0.htm">Cleaning Services Directory</a>
+                </p>
 
             </footer>
             <footer>

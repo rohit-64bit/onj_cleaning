@@ -4,6 +4,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { RiMenu2Line } from "react-icons/ri";
 import { Modal } from '@mui/material';
 import { NavHashLink } from 'react-router-hash-link';
+import { BOOKING_FORM_URL } from '../services/Helpers';
 
 const Header = () => {
 
@@ -51,9 +52,9 @@ const Header = () => {
                     </NavHashLink>
                 </nav>
 
-                <Link to='/contact' className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                <a href={BOOKING_FORM_URL} target='_blank' className='bg-white text-green-900 font-medium text-xl py-2 px-6 rounded-md'>
                     Book Now
-                </Link>
+                </a>
 
             </header>
             <header className='bg-green-800 flex justify-between items-center lg:mx-24 px-5 py-5 lg:hidden top-0 sticky z-40'>
@@ -65,7 +66,7 @@ const Header = () => {
                 onClose={handleClose}
                 className='flex justify-center items-center'
             >
-                <div className='bg-white p-10 rounded-xl'>
+                <div className='bg-white p-10 rounded-xl w-[90%]'>
                     <nav className='flex flex-col gap-5 text-xl text-[#004AAD]'>
 
                         {navLinks.map((data, index) => {
@@ -79,7 +80,7 @@ const Header = () => {
                             FAQs
                         </NavHashLink>
 
-                        <Link to='/contact' className='text-white bg-green-900 font-medium text-xl py-2 px-6 rounded-md'>
+                        <Link to='/cost-calculator' className='text-white bg-green-900 font-medium text-xl py-2 px-6 rounded-md'>
                             Book Now
                         </Link>
                     </nav>

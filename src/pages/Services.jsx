@@ -1,9 +1,10 @@
 import React from 'react'
 import Servimg from '../assets/about.webp'
 
-import Airbnb from '../assets/Serv1.jpeg'
-import Resident from '../assets/serv2.webp'
-import Comm from '../assets/serv3.jpg'
+import Airbnb from '../assets/Airbnb.jpg'
+import Resident from '../assets/residential.webp'
+import Comm from '../assets/commercial.webp'
+import Postconst from '../assets/postconst.webp'
 
 import { FaHome } from "react-icons/fa";
 import { BsBuildingsFill } from "react-icons/bs";
@@ -11,6 +12,7 @@ import { BsBuildingsFill } from "react-icons/bs";
 import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import { Link } from 'react-router-dom'
+import { BOOKING_FORM_URL } from '../services/Helpers'
 
 const stripePromise = loadStripe('pk_test_51PZIArG5MT11KApvXJgAFIKzv4iLzN2ca8IGOPmcwUQ8je8kiuUmqWEJKlWYP3D8CYUHfPKvr1uNswIav8LyAATs00f6EMku9m');
 
@@ -38,20 +40,24 @@ const ServiceCard = ({ data }) => {
     };
 
     return (
-        <div className='flex flex-col gap-3 bg-[#ffeecf7a] p-5 rounded-lg justify-between item-center shadow-lg'>
+        <div className='flex flex-col gap-3 duration-300 bg-slate-100 hover:bg-[#ffeecf7a] p-5 rounded-lg justify-between item-center shadow-lg'>
+            
             <div className='flex flex-col gap-3'>
-                <img src={data.img} alt="" className='w-full h-42 object-cover rounded-lg' />
-                <h4 className='font-bold text-xl text-center'>{data.title}</h4>
-                <p className='text-sm w-[100%] text-center'>{data.description}</p>
+                <img src={data.img} alt="" className='w-full h-42 aspect-video object-cover rounded-lg' />
+                <h4 className='font-bold text-xl'>{data.title}</h4>
+                <p className='text-sm w-[100%]'>{data.description}</p>
             </div>
             <div className="flex flex-col gap-2 mt-2">
                 {/* <h4 className='font-semibold text-center text-xl'>Price- {data.price} USD</h4> */}
                 {/* <button onClick={handleCheckout} className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out'>
                     Book Now
                 </button> */}
-                <Link to='/contact' className=' lg:mx-10 bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center'>
+                {/* <Link to='/contact' className=' bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center w-full'>
                     Book Now
-                </Link>
+                </Link> */}
+                <a href={BOOKING_FORM_URL} target='_blank' className=' bg-green-900 font-medium text-white py-2 rounded-lg hover:bg-[#323232] transition duration-300 ease-in-out text-center w-full'>
+                    Book Now
+                </a>
             </div>
         </div>
     )
@@ -83,7 +89,7 @@ const Services = () => {
             price: 200
         },
         {
-            img: Airbnb,
+            img: Postconst,
             title: 'Post-Construction Cleaning',
             description: 'After your construction or renovation project is completed, rely on us to clean up the debris and dust. We ensure the space is ready for occupancy. Services include: Debris removal, dusting, window cleaning, floor care, etc.',
             priceID: "price_1Q3GwrG5MT11KApvbEfCM46J",

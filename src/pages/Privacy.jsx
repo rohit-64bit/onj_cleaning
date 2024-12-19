@@ -65,7 +65,7 @@ const Privacy = () => {
                     <br />
                     <strong>Phone:</strong> (561) 451 7984
                     <br />
-                    <strong>Email:</strong> info@onjcleaning.com
+                    <strong>Email:</strong> contact@onjcleaningservices.com
                 </p>
             </div>
 

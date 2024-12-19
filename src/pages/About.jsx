@@ -27,6 +27,17 @@ const About = () => {
         }
     ];
 
+    const missionVision = [
+        {
+            title: 'Our Mission',
+            description: "To provide high-quality, dependable cleaning services that leave our clients' spaces spotless while environmentally safe cleaning methods."
+        },
+        {
+            title: 'Our Vision',
+            description: 'To be Belle Glade’s top cleaning service provider, known for professionalism, quality, and customer satisfaction.'
+        }
+    ]
+
     return (
         <>
             {/* Hero Section */}
@@ -40,7 +51,7 @@ const About = () => {
 
             {/* About Us Section */}
             <section className='px-5 lg:px-24 py-10 lg:py-20 h-max flex flex-col justify-around items-center bg-[#fffdf97a] gap-10'>
-                <p className='w-1/2 first-letter:text-3xl'>
+                <p className='lg:w-1/2 first-letter:text-3xl'>
                     <strong>ONJ Cleaning Services</strong> was founded with a passion for providing quality and reliable cleaning
                     solutions to homes and businesses in Belle Glade, Florida. With years of experience, we take
                     pride in delivering exceptional cleaning services tailored to meet our clients' unique needs. We
@@ -53,25 +64,26 @@ const About = () => {
 
             {/* Mission & Vision Section */}
             <section className='px-5 lg:px-24 py-10 lg:py-20 h-max flex flex-col justify-around bg-[#ffeecf7a] gap-10'>
+
                 <div className='text-green-900 text-center text-3xl xl:text-5xl font-bold mx-auto'>
                     "Our Mission and Vision"
                 </div>
 
-                <div className='text-center'>
-                    <p className='text-xl md:text-2xl font-semibold'>Our Mission</p>
-                    <p className='text-lg'>
-                        To provide high-quality, dependable cleaning services that leave our clients' spaces spotless
-                        while using environmentally safe cleaning methods.
-                    </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-10">
+
+                    {
+                        missionVision.map((item, index) => (
+                            <div key={index} className='bg-white rounded-lg p-10 flex flex-col justify-center text-center items-center gap-2'>
+                                <h4 className='font-bold text-2xl'>{item.title}</h4>
+                                <p className='font-light text-sm'>
+                                    {item.description}
+                                </p>
+                            </div>
+                        ))
+                    }
+
                 </div>
 
-                <div className='text-center'>
-                    <p className='text-xl md:text-2xl font-semibold'>Our Vision</p>
-                    <p className='text-lg'>
-                        To be Belle Glade’s top cleaning service provider, known for professionalism, quality, and
-                        customer satisfaction.
-                    </p>
-                </div>
             </section>
 
             {/* Why We Stand Out Section */}
@@ -84,7 +96,7 @@ const About = () => {
                     <div className='bg-white rounded-lg p-10 flex flex-col justify-center text-center items-center gap-2'>
                         <span className='text-green-900 text-6xl'>💼</span> {/* Placeholder Icon */}
                         <h4 className='font-bold text-2xl'>Licensed and Insured</h4>
-                        <p className='font-thin text-sm'>
+                        <p className='font-light text-sm'>
                             Our professional team is fully licensed and insured, giving you peace of mind while we clean your space.
                         </p>
                     </div>
@@ -92,7 +104,7 @@ const About = () => {
                     <div className='bg-white rounded-lg p-10 flex flex-col justify-center text-center items-center gap-2'>
                         <span className='text-green-900 text-6xl'>🌱</span> {/* Placeholder Icon */}
                         <h4 className='font-bold text-2xl'>Eco-Friendly Products</h4>
-                        <p className='font-thin text-sm'>
+                        <p className='font-light text-sm'>
                             We prioritize your safety and the environment by using eco-friendly and safe cleaning products.
                         </p>
                     </div>
@@ -100,7 +112,7 @@ const About = () => {
                     <div className='bg-white rounded-lg p-10 flex flex-col justify-center text-center items-center gap-2'>
                         <span className='text-green-900 text-6xl'>👍</span> {/* Placeholder Icon */}
                         <h4 className='font-bold text-2xl'>Satisfaction Guaranteed</h4>
-                        <p className='font-thin text-sm'>
+                        <p className='font-light text-sm'>
                             Our services come with a 100% satisfaction guarantee, ensuring every corner shines.
                         </p>
                     </div>
@@ -108,7 +120,7 @@ const About = () => {
                     <div className='bg-white rounded-lg p-10 flex flex-col justify-center text-center items-center gap-2'>
                         <span className='text-green-900 text-6xl'>💰</span> {/* Placeholder Icon */}
                         <h4 className='font-bold text-2xl'>Custom Cleaning Plans</h4>
-                        <p className='font-thin text-sm'>
+                        <p className='font-light text-sm'>
                             We offer flexible and tailored cleaning plans based on your unique requirements.
                         </p>
                     </div>

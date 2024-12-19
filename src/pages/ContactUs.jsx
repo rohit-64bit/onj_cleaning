@@ -6,6 +6,8 @@ import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
 
 import BgImg from '../assets/about.webp'
+import Disclaimer from '../components/Disclaimer';
+import { CONTACT_FORM_URL } from '../services/Helpers';
 
 const ContactUs = () => {
 
@@ -17,7 +19,7 @@ const ContactUs = () => {
         },
         {
             title: 'Email Address',
-            details: 'info@onjcleaning.com',
+            details: 'contact@onjcleaningservices.com',
             icon: CiMail
         },
         {
@@ -52,7 +54,7 @@ const ContactUs = () => {
                         <div>
                             <h4 className='font-bold text-xl'>Address:</h4>
                             <p>ONJ Cleaning Services</p>
-                            <p>200 WEST AVENUE, Belle Glade, FL 33430</p>
+                            <p>200 west Avenue A Belle Glade Florida 33430</p>
                         </div>
 
                         <div>
@@ -62,7 +64,7 @@ const ContactUs = () => {
 
                         <div>
                             <h4 className='font-bold text-xl'>Email:</h4>
-                            <p>info@onjcleaning.com</p>
+                            <p>contact@onjcleaningservices.com</p>
                         </div>
 
                         <div>
@@ -75,8 +77,16 @@ const ContactUs = () => {
 
                     {/* Contact Form */}
                     <div className='bg-white rounded-lg p-8 shadow-lg'>
+
                         <h4 className='font-bold text-2xl mb-5'>Get in Touch</h4>
-                        <form className='flex flex-col gap-4'>
+
+                        <p className='mb-5'>
+                            We're here to help! Whether you need a quote, want to schedule a service, or have questions
+                            about our offerings, our team is ready to assist you. Fill out the form below, and we’ll get back to you promptly.
+                        </p>
+
+                        {/* <form className='flex flex-col gap-4'>
+
                             <input
                                 type='text'
                                 placeholder='Your Name'
@@ -100,13 +110,34 @@ const ContactUs = () => {
                                 className='border-2 border-slate-200 focus:border-green-900 outline-none duration-300 rounded-lg p-3 h-32'
                                 required
                             ></textarea>
+
+                            <Disclaimer />
+
                             <button
                                 type='submit'
                                 className='bg-green-900 text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300'
                             >
                                 Send Message
                             </button>
+
+                        </form> */}
+
+                        <form className='flex flex-col gap-4'>
+
+                            
+
+                            <Disclaimer />
+
+                            <a
+                                target='_blank'
+                                href={CONTACT_FORM_URL}
+                                className='bg-green-900 text-center text-white font-bold py-3 px-6 rounded-lg hover:bg-green-700 transition duration-300'
+                            >
+                                Contact Us
+                            </a>
+
                         </form>
+
                     </div>
 
                 </div>
